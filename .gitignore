@@ -1,5 +1,4 @@
 dist/
-venv/
 flask_mysql.egg-info/
 MANIFEST.in
 
