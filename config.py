@@ -3,7 +3,7 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__));
 
 class Config(object):
-    HOST = str(os.environ.get("DB_HOST"));
+    HOST = str(os.environ.get("CLEARDB_DATABASE_URL")); # Setting dari heroku
     DATABASE = str(os.environ.get("DB_DATABASE"));
     USERNAME = str(os.environ.get("DB_USERNAME"));
     PASSWORD = str(os.environ.get("DB_PASSWORD"));
