@@ -8,5 +8,5 @@ app.config.from_object(Config)
 db = SQLAlchemy(app) # Membaca app
 migrate = Migrate(app, db) # hubungkan app dengan db
 
-from app.model import user
+from app.model import user, guru, siswa
 from app import routes
