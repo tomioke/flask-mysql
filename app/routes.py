@@ -6,5 +6,5 @@ def index():
     return 'Hello World!!'
 
 @app.route('/guru', methods=['GET'])
-def guru_s():
+def gurus():
     return GuruController.index()
