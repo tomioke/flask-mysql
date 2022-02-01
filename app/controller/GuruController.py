@@ -6,7 +6,7 @@ def index():
     try:
         guru = Guru.query.all()
         data = formatarray(guru)
-        return response.success(data, "loading data successfully!")
+        return response.success(data, "success")
 
     except Exception as e:
         print(e)
