@@ -30,4 +30,6 @@ def singleObject(data):
 
     }
 
+    return data
+
 
