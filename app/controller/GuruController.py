@@ -1,5 +1,4 @@
 from app.model.guru import Guru
-
 from app import response, app, db
 from flask import request
 
