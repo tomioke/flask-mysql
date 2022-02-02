@@ -9,4 +9,4 @@ class Config(object):
     PASSWORD = str(os.environ.get("DB_PASSWORD"))
 
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://' + USERNAME + ':' + PASSWORD + '@' + HOST + '/' + DATABASE
-    SQLALCHEMY_TRACK_NOTIFICATIONS = False
+    # SQLALCHEMY_TRACK_NOTIFICATIONS = False
