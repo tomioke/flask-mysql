@@ -2,7 +2,6 @@ from flask import Flask
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from .commands import create_tables #
 import sys
 import logging
 
@@ -18,5 +17,5 @@ app.logger.setLevel(logging.ERROR)
 # command buat table database
 app.cli.add_command(create_tables)
 
-# from app.model import user, guru, siswa
+from app.model import user, guru, siswa
 from app import routes
