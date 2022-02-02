@@ -4,7 +4,7 @@ from flask import request
 
 @app.route('/')
 def index():
-    pass
+    return '<p>Selamat datang<p>'
 
 @app.route('/guru', methods=['GET', 'POST'])
 def guru_s():
