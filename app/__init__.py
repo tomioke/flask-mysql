@@ -14,8 +14,5 @@ migrate = Migrate(app, db) # hubungkan app dengan db
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 
-# command buat table database
-app.cli.add_command(create_tables)
-
 from app.model import user, guru, siswa
 from app import routes
