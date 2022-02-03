@@ -1,4 +1,4 @@
-from app import app, db
+from app import app
 from app.controller import GuruController, SiswaController, UserController
 from flask import request
 
