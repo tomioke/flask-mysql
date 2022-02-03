@@ -1,4 +1,4 @@
-from app import app
+from app import app, db
 from app.controller import GuruController, SiswaController, UserController
 from flask import request
 
@@ -8,11 +8,10 @@ def index():
 
 @app.route('/guru', methods=['GET', 'POST'])
 def guru_s():
-    if request.method == 'POST':
+    if request.method == 'GET':
+        return GuruController.index()
+    else:
         return GuruController.save()
-    # else:
-    #     return GuruController.save()
-    return GuruController.index()
 
 @app.route('/guru/<id>', methods=['GET'])
 def guruDetail(id):
