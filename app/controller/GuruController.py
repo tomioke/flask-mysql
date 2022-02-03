@@ -83,10 +83,10 @@ def formatSiswa(data):
 # Menyimpan dan menambahkan data guru
 def save():
     try:
-        nip = request.form.get('nip')
-        nama = request.form.get('nama')
-        phone = request.form.get('phone')
-        alamat = request.form.get('alamat')
+        nip = request.form('nip')
+        nama = request.form('nama')
+        phone = request.form('phone')
+        alamat = request.form('alamat')
 
         gurus = Guru(nip=nip, nama=nama, phone=phone, alamat=alamat)
         db.session.add(gurus)
