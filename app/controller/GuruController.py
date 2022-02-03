@@ -88,11 +88,11 @@ def save():
         phone = request.form.get('phone')
         alamat = request.form.get('alamat')
 
-        guru_s = Guru(nip=nip, nama=nama, phone=phone, alamat=alamat)
-        db.session.add(guru_s)
+        gurus = Guru(nip=nip, nama=nama, phone=phone, alamat=alamat)
+        db.session.add(gurus)
         db.session.commit()
 
-        return response.success('', 'Sukses menambahkan data!')
+        return response.success(data, 'Sukses menambahkan data!') #
     except Exception as e:
         print(e)
 
