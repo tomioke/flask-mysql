@@ -8,7 +8,7 @@ def index():
 
 @app.route('/guru', methods=['GET', 'POST'])
 def guru_s():
-    if request.method == 'GET':
+    if request.method == ['GET']:
         return GuruController.index()
     else:
         return GuruController.save()
