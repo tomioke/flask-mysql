@@ -8,11 +8,11 @@ def index():
 
 @app.route('/guru', methods=['GET', 'POST'])
 def guru_s():
-    if request.method == 'GET':
-        return GuruController.index()
-
-    else:
+    if request.method == 'POST':
         return GuruController.save()
+    # else:
+    #     return GuruController.save()
+    return GuruController.index()
 
 @app.route('/guru/<id>', methods=['GET'])
 def guruDetail(id):

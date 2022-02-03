@@ -92,7 +92,7 @@ def save():
         db.session.add(gurus)
         db.session.commit()
 
-        return response.success(data, 'Sukses menambahkan data!') #
+        return response.success('', 'Sukses menambahkan data!') 
     except Exception as e:
         print(e)
 
